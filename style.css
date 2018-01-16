@@ -1,0 +1,117 @@
+#wrapper {
+
+	/* Create CSS grid container. All elements inside the wrapper div become its children. */
+	display: grid; 
+
+	/* create three rows. The first is used to position the header, the second is used to position the main content, the third is for the footer */
+	grid-template-rows: 1000px 500px 30px;
+
+	/* create four columns. 
+	The first and fourth column divide the space around the image to center it.
+	The third and second columns split the image vertically to allow for layering of the header in the appropriate place. */
+	grid-template-columns: 116.5px 550px 550px 116.5px;
+}
+
+#img {
+	grid-column: 2;
+	
+	/* size the image appropriately to its original width and height */
+	height: 1500px;
+	width: 1100px;
+}
+
+header {
+	grid-row: 1;
+	grid-column: 3;
+    color: #f5a700;
+	font-family: 'Caveat Brush', cursive;
+	text-transform: uppercase;
+	text-align: center;
+
+	/* vertically aligns the text at the bottom of grid row one. */
+	align-self: flex-end;	
+}
+
+a {
+	color: #f5a700;
+	text-decoration: none;
+	font-size: 73px;
+}
+
+#producer {
+	font-size: 53px;
+}
+
+h1 {
+	margin: 0px;
+}
+
+p {
+	color: #a59de9;
+	font-family: 'PT Serif', serif;
+	margin: 5px;
+}
+
+strong {
+	text-transform: uppercase;
+}
+
+main {
+	grid-row: 2;
+
+	/* place in column two and have it span two columns */
+	grid-column: 2 / span 2;
+
+	/* vertically aligns the text at the end of grid row two */
+	align-self: flex-end;
+	text-align: center;
+}
+
+#soundtrack {
+	margin: auto;
+	max-width: 150px;
+	border: solid #a59de9 1px;
+	font-size: 10px;
+}
+
+#rating {
+	border: solid #a59de9 1px;
+	font-size: 10px;
+	max-width: 300px;
+	float: left;
+}
+
+#audio {
+	border: solid #a59de9 1px;
+	font-size: 10px;
+	max-width: 150px;
+	float: right;
+}
+
+#mainFooter {
+	grid-row: 2;
+	grid-column: 2;
+	align-self: flex-end;
+	float: left;
+}
+
+#mainFooter p {
+	color: #a59de9;
+}
+
+footer {
+	grid-row: 3;
+
+	/* place in column two and have it span two columns */
+	grid-column: 2 / span 2;
+	text-align: center;
+}
+
+footer p {
+	margin: 10px;
+	color: #000000;
+}
+
+
+
+
